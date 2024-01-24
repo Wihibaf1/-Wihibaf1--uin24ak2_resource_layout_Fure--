@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Resources</title>
+</head>
+<body>
+
+<h1>HTML</h1>
+
+<ul>
+    <!-- Loop through each resource -->
+    
+        <li>
+            <h2>{{ resource.category }}</h2>
+            <p>{{ resource.text }}</p>
+            
+            <ul>
+                <!-- Loop through each source in the resource -->
+                {% for source in resource.sources %}
+                    <li>
+                        <a href="{{ source.url }}" target="_blank">{{ source.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+</ul>
+<script src="../ressurser.js/style.css"defer></script>
+</body>
+</html>
