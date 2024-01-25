@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development Resources</title>
+    <title>Din Ressursside</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="ressurser.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-<h1>HTML</h1>
+<nav id="fanemeny">
+    <!-- Dette blir fylt av JavaScript -->
 
-<ul>
-    <!-- Loop through each resource -->
-    
-        <li>
-            <h2>{{ resource.category }}</h2>
-            <p>{{ resource.text }}</p>
-            
-            <ul>
-                <!-- Loop through each source in the resource -->
-                {% for source in resource.sources %}
-                    <li>
-                        <a href="{{ source.url }}" target="_blank">{{ source.title }}</a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </li>
-    {% endfor %}
-</ul>
-<script src="../ressurser.js/style.css"defer></script>
+</nav>
+
+<main id="main-content">
+    <!--  generert av JavaScript -->
+
+</main>
+
 </body>
 </html>

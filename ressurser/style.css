@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #2A324B;
+    margin: 0;
+    padding: 0;
+    background-color: #E1E5EE;
+}
+
+nav#fanemeny {
+    background-color: #2A324B;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav#fanemeny ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav#fanemeny ul li {
+    display: inline;
+}
+
+nav#fanemeny ul li a {
+    display: inline-block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav#fanemeny ul li a:hover,
+nav#fanemeny ul li a.active {
+    background-color: #58699D;
+}
+
+main#main-content {
+    background-color: #fff;
+    padding: 20px;
+    min-height: 80vh; /* Tilpasset etter behov for å sikre at innholdet dekker vertikal plass /
+}
+
+/ Du vil legge til mer spesifikke stiler for å passe til designet ditt og responsive design aspekter */
+
+
+}
